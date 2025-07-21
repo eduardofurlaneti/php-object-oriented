@@ -1,6 +1,6 @@
 # PHP Object Oriented Studies
 
-> :books This repository contains a study material only
+> :books: This repository contains a study material only :books:
 
 A view about PHP 7.4 and 8+ and their new components.
 
