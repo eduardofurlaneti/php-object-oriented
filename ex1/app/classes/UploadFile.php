@@ -1,15 +1,15 @@
 <?php
+
 namespace app\classes;
 
-class UploadFoto extends Upload
+class UploadFile extends Upload
 {
-
     public $file;
-    public $newName;
-    public $extensions = ['png', 'jpg'];
+    public $extensions = ['txt', 'doc', 'pdf'];
 
     public function __construct($file)
     {
         parent::__construct($file, $this->extensions);
+        
     }
 }
