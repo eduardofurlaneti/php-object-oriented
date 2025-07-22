@@ -2,6 +2,8 @@
 
 namespace app\classes;
 
+use \app\traits\validationFile;
+
 class UploadFile extends Upload
 {
     public $file;
@@ -10,6 +12,8 @@ class UploadFile extends Upload
     public function __construct($file)
     {
         parent::__construct($file, $this->extensions);
-        
     }
+
+    use validationFile;
+
 }

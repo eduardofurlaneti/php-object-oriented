@@ -33,7 +33,7 @@ class Upload
     }
 
     protected function verifyExtension($extensions){
-        if (!in_array(pathinfo($this->file, PATHINFO_EXTENSION), $extensions)) {
+        if (!in_array($this->extension(), $extensions)) {
             
             throw new \Exception("Extensão inválida. Use: " . implode(', ', $extensions) . "\nUtilizado agora: " . pathinfo($this->file, PATHINFO_EXTENSION));
         }
