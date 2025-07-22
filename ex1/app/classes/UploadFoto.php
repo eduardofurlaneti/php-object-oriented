@@ -1,7 +1,7 @@
 <?php
 namespace app\classes;
 
-class UploadFoto
+class UploadFoto extends Upload
 {
 
     public $file;
@@ -13,7 +13,7 @@ class UploadFoto
         if (!in_array(pathinfo($file, PATHINFO_EXTENSION), $this->extension)) {
             throw new \Exception("Extensão inválida. Use: " . implode(', ', $this->extension));
         }
-        
+
         $this->file = $file;
         $this->rename();
     }
