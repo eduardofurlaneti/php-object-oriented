@@ -8,6 +8,16 @@ class UploadFoto
     public $newName;
     public $extension = ['png', 'jpg'];
 
+    public function __construct($file)
+    {
+        if (!in_array(pathinfo($file, PATHINFO_EXTENSION), $this->extension)) {
+            throw new \Exception("Extensão inválida. Use: " . implode(', ', $this->extension));
+        }
+        
+        $this->file = $file;
+        $this->rename();
+    }
+
     public function file($file){
         $this->file = $file;
     }
