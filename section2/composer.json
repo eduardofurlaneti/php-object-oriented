@@ -1,0 +1,15 @@
+{
+    "name": "deivisson.souza/section2",
+    "autoload": {
+        "psr-4": {
+            "app\\":"app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Eduardo Furlaneti",
+            "email": "eduardohppa@gmail.com"
+        }
+    ],
+    "require": {}
+}
